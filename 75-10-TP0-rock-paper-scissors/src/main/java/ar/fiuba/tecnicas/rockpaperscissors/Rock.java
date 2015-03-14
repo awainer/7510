@@ -1,9 +1,15 @@
 package ar.fiuba.tecnicas.rockpaperscissors;
+import ar.fiuba.tecnicas.rockpaperscissors.PlayerChoiceHashes;
 
 class Rock implements PlayerChoice {
-
+	private int type;
+	
+	public Rock(){
+		this.type = PlayerChoiceHashes.ROCK.ordinal();
+	}
+	
 	public PlayerChoice vs(Rock opponent) {
-		return this;
+		return opponent; // o this, es lo mismo
 	}
 
 	public PlayerChoice vs(Paper opponent) {
@@ -14,15 +20,8 @@ class Rock implements PlayerChoice {
 		return this;
 	}
 
-
-	public boolean equals(Rock aRock){
-		return true;
-	}
-
 	@Override
-	public boolean equals(Object o){
-		return false;
+	public int hashCode(){
+		return this.type;
 	}
-
-
 }
