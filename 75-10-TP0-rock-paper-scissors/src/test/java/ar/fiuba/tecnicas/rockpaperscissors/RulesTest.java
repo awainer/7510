@@ -8,9 +8,9 @@ import ar.fiuba.tecnicas.rockpaperscissors.Paper;
 
 public class RulesTest {
 
-    private PlayerChoice rock = new Rock();
-    private PlayerChoice paper = new Paper();
-    private PlayerChoice scissors = new Scissors();
+    private Rock rock = new Rock();
+    private Paper paper = new Paper();
+    private Scissors scissors = new Scissors();
 
     @Test
     public void rockBeatsScissors() {
