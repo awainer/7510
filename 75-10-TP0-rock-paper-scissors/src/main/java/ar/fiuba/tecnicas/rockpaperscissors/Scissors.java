@@ -3,10 +3,11 @@ package ar.fiuba.tecnicas.rockpaperscissors;
 public class Scissors implements PlayerChoice {
 
 	private int type;
-	
-	public Scissors(){
+
+	public Scissors() {
 		this.type = PlayerChoiceHashes.SCISSORS.ordinal();
 	}
+
 	public PlayerChoice vs(Rock opponent) {
 		return opponent;
 	}
@@ -20,7 +21,7 @@ public class Scissors implements PlayerChoice {
 	}
 
 	@Override
-	public int hashCode(){
+	public int hashCode() {
 		return this.type;
 	}
 }
