@@ -8,18 +8,15 @@ public class Scissors implements PlayerChoice {
 		this.type = PlayerChoiceHashes.SCISSORS.ordinal();
 	}
 	public PlayerChoice vs(Rock opponent) {
-		// TODO Auto-generated method stub
-		return null;
+		return opponent;
 	}
 
 	public PlayerChoice vs(Paper opponent) {
-		// TODO Auto-generated method stub
-		return null;
+		return this;
 	}
 
 	public PlayerChoice vs(Scissors opponent) {
-		// TODO Auto-generated method stub
-		return null;
+		return this;
 	}
 
 	@Override

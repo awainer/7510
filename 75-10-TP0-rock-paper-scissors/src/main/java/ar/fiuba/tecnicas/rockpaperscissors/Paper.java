@@ -8,18 +8,15 @@ class Paper implements PlayerChoice {
 	}
 
 	public PlayerChoice vs(Rock opponent) {
-		// TODO Auto-generated method stub
-		return null;
+		return this;
 	}
 
 	public PlayerChoice vs(Paper opponent) {
-		// TODO Auto-generated method stub
-		return null;
+		return this;
 	}
 
 	public PlayerChoice vs(Scissors opponent) {
-		// TODO Auto-generated method stub
-		return null;
+		return opponent;
 	}
 
 	@Override

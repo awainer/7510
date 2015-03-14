@@ -9,7 +9,7 @@ class Rock implements PlayerChoice {
 	}
 	
 	public PlayerChoice vs(Rock opponent) {
-		return opponent; // o this, es lo mismo
+		return this;
 	}
 
 	public PlayerChoice vs(Paper opponent) {
