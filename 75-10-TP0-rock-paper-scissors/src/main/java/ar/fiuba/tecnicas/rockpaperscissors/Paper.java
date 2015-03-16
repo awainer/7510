@@ -1,11 +1,6 @@
 package ar.fiuba.tecnicas.rockpaperscissors;
 
 class Paper implements PlayerChoice {
-	private int type;
-
-	public Paper() {
-		this.type = PlayerChoiceHashes.PAPER.ordinal();
-	}
 
 	public PlayerChoice vs(Rock opponent) {
 		return this;
@@ -21,6 +16,6 @@ class Paper implements PlayerChoice {
 
 	@Override
 	public int hashCode() {
-		return this.type;
+		return PlayerChoiceHashes.PAPER.ordinal();
 	}
 }
